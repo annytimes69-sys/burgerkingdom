@@ -62,33 +62,40 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-bg h-screen flex items-center justify-center text-center px-4">
-        <div class="max-w-4xl animate-fade-in-up">
-            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                ПРЕМИУМ БУРГЕРЫ <br> <span class="text-orange-500">С ДОСТАВКОЙ</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-8 font-light">
-                Любой Премиум Бургер + Напиток + Полезный десрет всего за <span class="text-white font-bold text-3xl">1000₽</span>
-            </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4 mb-10">
-                <div class="bg-black/50 backdrop-blur px-6 py-3 rounded-lg border border-orange-500/30">
-                    <span class="block text-orange-500 font-bold text-lg">200 ГР</span>
-                    <span class="text-sm text-gray-400">Отборного мяса</span>
-                </div>
-                <div class="bg-black/50 backdrop-blur px-6 py-3 rounded-lg border border-orange-500/30">
-                    <span class="block text-orange-500 font-bold text-lg">БЕСПЛАТНО</span>
-                    <span class="text-sm text-gray-400">Доставка по городу</span>
-                </div>
-                <div class="bg-black/50 backdrop-blur px-6 py-3 rounded-lg border border-orange-500/30">
-                    <span class="block text-orange-500 font-bold text-lg">100%</span>
-                    <span class="text-sm text-gray-400">Натуральные продукты</span>
-                </div>
+<section class="hero-bg h-screen flex items-center justify-center text-center px-4">
+    <div class="max-w-4xl animate-fade-in-up">
+        <!-- ИЗМЕНЕНИЯ ЗДЕСЬ: -->
+        <!-- 1. Добавлен text-white (чтобы текст стал белым) -->
+        <!-- 2. Изменен размер: text-3xl для телефона, md:text-6xl для ПК -->
+        <!-- 3. leading-snug вместо leading-tight (чтобы буквы не обрезались сверху) -->
+        <h1 class="text-white text-3xl md:text-6xl font-black mb-6 leading-snug">
+            ПРЕМИУМ БУРГЕРЫ <br> 
+            <span class="text-orange-500">С ДОСТАВКОЙ</span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-300 mb-8 font-light">
+            Любой Премиум Бургер + Напиток + Полезный десрет всего за <span class="text-white font-bold text-3xl">1000₽</span>
+        </p>
+        
+        <div class="flex flex-col md:flex-row justify-center gap-4 mb-10">
+            <div class="bg-black/50 backdrop-blur px-6 py-3 rounded-lg border border-orange-500/30">
+                <span class="block text-orange-500 font-bold text-lg">200 ГР</span>
+                <span class="text-sm text-gray-400">Отборного мяса</span>
             </div>
-            <a href="#menu" class="btn-primary inline-block px-10 py-4 rounded-full text-xl font-bold uppercase tracking-wider">
-                Смотреть меню
-            </a>
+            <div class="bg-black/50 backdrop-blur px-6 py-3 rounded-lg border border-orange-500/30">
+                <span class="block text-orange-500 font-bold text-lg">БЕСПЛАТНО</span>
+                <span class="text-sm text-gray-400">Доставка по городу</span>
+            </div>
+            <div class="bg-black/50 backdrop-blur px-6 py-3 rounded-lg border border-orange-500/30">
+                <span class="block text-orange-500 font-bold text-lg">100%</span>
+                <span class="text-sm text-gray-400">Натуральные продукты</span>
+            </div>
         </div>
-    </section>
+        <a href="#menu" class="btn-primary inline-block px-10 py-4 rounded-full text-xl font-bold uppercase tracking-wider">
+            Смотреть меню
+        </a>
+    </div>
+</section>
 
     <!-- Menu Section -->
     <section id="menu" class="py-20 bg-zinc-900">
